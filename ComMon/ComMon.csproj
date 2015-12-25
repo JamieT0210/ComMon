@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\clock.jpg" />
+    <None Include="Resources\CPUBus.png" />
     <Content Include="Resources\fan.jpg" />
     <Content Include="Resources\guage.png" />
     <Content Include="Resources\performance-clock-speed-512.png" />

@@ -32,8 +32,6 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlGPU = new System.Windows.Forms.Panel();
-            this.btnRefreshValues = new System.Windows.Forms.Button();
-            this.cmbGPUName = new System.Windows.Forms.ComboBox();
             this.grpShader = new System.Windows.Forms.GroupBox();
             this.txtGPUShader = new System.Windows.Forms.TextBox();
             this.grpGPUMemLoad = new System.Windows.Forms.GroupBox();
@@ -50,6 +48,22 @@
             this.txtGPUFanSpeed = new System.Windows.Forms.TextBox();
             this.grpTemp = new System.Windows.Forms.GroupBox();
             this.txtGpuTemp = new System.Windows.Forms.TextBox();
+            this.cmbGPUName = new System.Windows.Forms.ComboBox();
+            this.btnRefreshValues = new System.Windows.Forms.Button();
+            this.pnlCpu = new System.Windows.Forms.Panel();
+            this.cmbCPUName = new System.Windows.Forms.ComboBox();
+            this.grpCPUTemp = new System.Windows.Forms.GroupBox();
+            this.txtCPUTemp = new System.Windows.Forms.TextBox();
+            this.gprCPUBus = new System.Windows.Forms.GroupBox();
+            this.txtCPUBus = new System.Windows.Forms.TextBox();
+            this.grpCPUCore = new System.Windows.Forms.GroupBox();
+            this.txtCPUCore = new System.Windows.Forms.TextBox();
+            this.grpCPULoad = new System.Windows.Forms.GroupBox();
+            this.txtCPULoad = new System.Windows.Forms.TextBox();
+            this.picCPULoad = new System.Windows.Forms.PictureBox();
+            this.picCPUCore = new System.Windows.Forms.PictureBox();
+            this.picBusSpeed = new System.Windows.Forms.PictureBox();
+            this.picCPUTemp = new System.Windows.Forms.PictureBox();
             this.picGPMShader = new System.Windows.Forms.PictureBox();
             this.picGPUMemLoadPerc = new System.Windows.Forms.PictureBox();
             this.picCoreLoad = new System.Windows.Forms.PictureBox();
@@ -58,8 +72,6 @@
             this.picGPUCore = new System.Windows.Forms.PictureBox();
             this.picGPUFanSpeed = new System.Windows.Forms.PictureBox();
             this.picGPUTemp = new System.Windows.Forms.PictureBox();
-            this.pnlCpu = new System.Windows.Forms.Panel();
-            this.cmbCPUName = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.pnlGPU.SuspendLayout();
             this.grpShader.SuspendLayout();
@@ -70,6 +82,15 @@
             this.grpCoreClock.SuspendLayout();
             this.grpFanSpeed.SuspendLayout();
             this.grpTemp.SuspendLayout();
+            this.pnlCpu.SuspendLayout();
+            this.grpCPUTemp.SuspendLayout();
+            this.gprCPUBus.SuspendLayout();
+            this.grpCPUCore.SuspendLayout();
+            this.grpCPULoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPULoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUCore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBusSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).BeginInit();
@@ -78,7 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).BeginInit();
-            this.pnlCpu.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -88,7 +108,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(2026, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(606, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,32 +140,10 @@
             this.pnlGPU.Controls.Add(this.grpFanSpeed);
             this.pnlGPU.Controls.Add(this.grpTemp);
             this.pnlGPU.Controls.Add(this.cmbGPUName);
-            this.pnlGPU.Controls.Add(this.btnRefreshValues);
-            this.pnlGPU.Location = new System.Drawing.Point(0, 36);
+            this.pnlGPU.Location = new System.Drawing.Point(13, 240);
             this.pnlGPU.Name = "pnlGPU";
-            this.pnlGPU.Size = new System.Drawing.Size(555, 660);
+            this.pnlGPU.Size = new System.Drawing.Size(581, 348);
             this.pnlGPU.TabIndex = 1;
-            // 
-            // btnRefreshValues
-            // 
-            this.btnRefreshValues.Location = new System.Drawing.Point(10, 450);
-            this.btnRefreshValues.Name = "btnRefreshValues";
-            this.btnRefreshValues.Size = new System.Drawing.Size(75, 23);
-            this.btnRefreshValues.TabIndex = 2;
-            this.btnRefreshValues.Text = "button1";
-            this.btnRefreshValues.UseVisualStyleBackColor = true;
-            this.btnRefreshValues.Visible = false;
-            this.btnRefreshValues.Click += new System.EventHandler(this.btnRefreshGPU_Click);
-            // 
-            // cmbGPUName
-            // 
-            this.cmbGPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGPUName.FormattingEnabled = true;
-            this.cmbGPUName.Location = new System.Drawing.Point(11, 5);
-            this.cmbGPUName.Name = "cmbGPUName";
-            this.cmbGPUName.Size = new System.Drawing.Size(528, 30);
-            this.cmbGPUName.TabIndex = 3;
             // 
             // grpShader
             // 
@@ -154,10 +152,10 @@
             this.grpShader.Controls.Add(this.picGPMShader);
             this.grpShader.Controls.Add(this.txtGPUShader);
             this.grpShader.Enabled = false;
-            this.grpShader.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpShader.Location = new System.Drawing.Point(368, 244);
+            this.grpShader.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpShader.Location = new System.Drawing.Point(149, 189);
             this.grpShader.Name = "grpShader";
-            this.grpShader.Size = new System.Drawing.Size(173, 201);
+            this.grpShader.Size = new System.Drawing.Size(133, 143);
             this.grpShader.TabIndex = 17;
             this.grpShader.TabStop = false;
             this.grpShader.Text = "Shader MHz:";
@@ -168,10 +166,10 @@
             this.txtGPUShader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUShader.Enabled = false;
             this.txtGPUShader.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUShader.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUShader.Location = new System.Drawing.Point(36, 106);
             this.txtGPUShader.Name = "txtGPUShader";
             this.txtGPUShader.ReadOnly = true;
-            this.txtGPUShader.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUShader.Size = new System.Drawing.Size(65, 23);
             this.txtGPUShader.TabIndex = 0;
             this.txtGPUShader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -182,13 +180,13 @@
             this.grpGPUMemLoad.Controls.Add(this.picGPUMemLoadPerc);
             this.grpGPUMemLoad.Controls.Add(this.txtGPUMemLoadPerc);
             this.grpGPUMemLoad.Enabled = false;
-            this.grpGPUMemLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpGPUMemLoad.Location = new System.Drawing.Point(278, 451);
+            this.grpGPUMemLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpGPUMemLoad.Location = new System.Drawing.Point(432, 189);
             this.grpGPUMemLoad.Name = "grpGPUMemLoad";
-            this.grpGPUMemLoad.Size = new System.Drawing.Size(173, 201);
+            this.grpGPUMemLoad.Size = new System.Drawing.Size(133, 143);
             this.grpGPUMemLoad.TabIndex = 19;
             this.grpGPUMemLoad.TabStop = false;
-            this.grpGPUMemLoad.Text = "Memory Load %:";
+            this.grpGPUMemLoad.Text = "Memory %:";
             // 
             // txtGPUMemLoadPerc
             // 
@@ -196,10 +194,10 @@
             this.txtGPUMemLoadPerc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUMemLoadPerc.Enabled = false;
             this.txtGPUMemLoadPerc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUMemLoadPerc.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUMemLoadPerc.Location = new System.Drawing.Point(36, 106);
             this.txtGPUMemLoadPerc.Name = "txtGPUMemLoadPerc";
             this.txtGPUMemLoadPerc.ReadOnly = true;
-            this.txtGPUMemLoadPerc.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUMemLoadPerc.Size = new System.Drawing.Size(65, 23);
             this.txtGPUMemLoadPerc.TabIndex = 0;
             this.txtGPUMemLoadPerc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -210,10 +208,10 @@
             this.grpGPUCoreLoad.Controls.Add(this.picCoreLoad);
             this.grpGPUCoreLoad.Controls.Add(this.txtGPUCoreLoad);
             this.grpGPUCoreLoad.Enabled = false;
-            this.grpGPUCoreLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpGPUCoreLoad.Location = new System.Drawing.Point(99, 451);
+            this.grpGPUCoreLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpGPUCoreLoad.Location = new System.Drawing.Point(288, 189);
             this.grpGPUCoreLoad.Name = "grpGPUCoreLoad";
-            this.grpGPUCoreLoad.Size = new System.Drawing.Size(173, 201);
+            this.grpGPUCoreLoad.Size = new System.Drawing.Size(133, 143);
             this.grpGPUCoreLoad.TabIndex = 18;
             this.grpGPUCoreLoad.TabStop = false;
             this.grpGPUCoreLoad.Text = "Core Load %";
@@ -224,10 +222,10 @@
             this.txtGPUCoreLoad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUCoreLoad.Enabled = false;
             this.txtGPUCoreLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUCoreLoad.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUCoreLoad.Location = new System.Drawing.Point(36, 106);
             this.txtGPUCoreLoad.Name = "txtGPUCoreLoad";
             this.txtGPUCoreLoad.ReadOnly = true;
-            this.txtGPUCoreLoad.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUCoreLoad.Size = new System.Drawing.Size(65, 23);
             this.txtGPUCoreLoad.TabIndex = 0;
             this.txtGPUCoreLoad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -238,10 +236,10 @@
             this.grpFanPerc.Controls.Add(this.picGPUFanPerc);
             this.grpFanPerc.Controls.Add(this.txtGpuFanPercent);
             this.grpFanPerc.Enabled = false;
-            this.grpFanPerc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpFanPerc.Location = new System.Drawing.Point(368, 40);
+            this.grpFanPerc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpFanPerc.Location = new System.Drawing.Point(288, 40);
             this.grpFanPerc.Name = "grpFanPerc";
-            this.grpFanPerc.Size = new System.Drawing.Size(173, 201);
+            this.grpFanPerc.Size = new System.Drawing.Size(133, 143);
             this.grpFanPerc.TabIndex = 14;
             this.grpFanPerc.TabStop = false;
             this.grpFanPerc.Text = "Fan Speed %:";
@@ -252,10 +250,10 @@
             this.txtGpuFanPercent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGpuFanPercent.Enabled = false;
             this.txtGpuFanPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGpuFanPercent.Location = new System.Drawing.Point(36, 159);
+            this.txtGpuFanPercent.Location = new System.Drawing.Point(36, 108);
             this.txtGpuFanPercent.Name = "txtGpuFanPercent";
             this.txtGpuFanPercent.ReadOnly = true;
-            this.txtGpuFanPercent.Size = new System.Drawing.Size(100, 23);
+            this.txtGpuFanPercent.Size = new System.Drawing.Size(65, 23);
             this.txtGpuFanPercent.TabIndex = 0;
             this.txtGpuFanPercent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -266,10 +264,10 @@
             this.grpMemClock.Controls.Add(this.picGPUMem);
             this.grpMemClock.Controls.Add(this.txtGPUMem);
             this.grpMemClock.Enabled = false;
-            this.grpMemClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpMemClock.Location = new System.Drawing.Point(189, 244);
+            this.grpMemClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMemClock.Location = new System.Drawing.Point(10, 189);
             this.grpMemClock.Name = "grpMemClock";
-            this.grpMemClock.Size = new System.Drawing.Size(173, 201);
+            this.grpMemClock.Size = new System.Drawing.Size(133, 143);
             this.grpMemClock.TabIndex = 16;
             this.grpMemClock.TabStop = false;
             this.grpMemClock.Text = "Memory MHz:";
@@ -280,10 +278,10 @@
             this.txtGPUMem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUMem.Enabled = false;
             this.txtGPUMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUMem.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUMem.Location = new System.Drawing.Point(36, 106);
             this.txtGPUMem.Name = "txtGPUMem";
             this.txtGPUMem.ReadOnly = true;
-            this.txtGPUMem.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUMem.Size = new System.Drawing.Size(65, 23);
             this.txtGPUMem.TabIndex = 0;
             this.txtGPUMem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -294,10 +292,10 @@
             this.grpCoreClock.Controls.Add(this.picGPUCore);
             this.grpCoreClock.Controls.Add(this.txtGPUCore);
             this.grpCoreClock.Enabled = false;
-            this.grpCoreClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCoreClock.Location = new System.Drawing.Point(10, 244);
+            this.grpCoreClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCoreClock.Location = new System.Drawing.Point(432, 43);
             this.grpCoreClock.Name = "grpCoreClock";
-            this.grpCoreClock.Size = new System.Drawing.Size(173, 201);
+            this.grpCoreClock.Size = new System.Drawing.Size(133, 143);
             this.grpCoreClock.TabIndex = 15;
             this.grpCoreClock.TabStop = false;
             this.grpCoreClock.Text = "Core MHz:";
@@ -308,10 +306,10 @@
             this.txtGPUCore.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUCore.Enabled = false;
             this.txtGPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUCore.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUCore.Location = new System.Drawing.Point(34, 101);
             this.txtGPUCore.Name = "txtGPUCore";
             this.txtGPUCore.ReadOnly = true;
-            this.txtGPUCore.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUCore.Size = new System.Drawing.Size(65, 23);
             this.txtGPUCore.TabIndex = 0;
             this.txtGPUCore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -322,13 +320,13 @@
             this.grpFanSpeed.Controls.Add(this.picGPUFanSpeed);
             this.grpFanSpeed.Controls.Add(this.txtGPUFanSpeed);
             this.grpFanSpeed.Enabled = false;
-            this.grpFanSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpFanSpeed.Location = new System.Drawing.Point(189, 40);
+            this.grpFanSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpFanSpeed.Location = new System.Drawing.Point(149, 40);
             this.grpFanSpeed.Name = "grpFanSpeed";
-            this.grpFanSpeed.Size = new System.Drawing.Size(173, 201);
+            this.grpFanSpeed.Size = new System.Drawing.Size(133, 143);
             this.grpFanSpeed.TabIndex = 13;
             this.grpFanSpeed.TabStop = false;
-            this.grpFanSpeed.Text = "Fan Speed RPM:";
+            this.grpFanSpeed.Text = "Fan RPM:";
             // 
             // txtGPUFanSpeed
             // 
@@ -336,10 +334,10 @@
             this.txtGPUFanSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGPUFanSpeed.Enabled = false;
             this.txtGPUFanSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUFanSpeed.Location = new System.Drawing.Point(36, 159);
+            this.txtGPUFanSpeed.Location = new System.Drawing.Point(36, 108);
             this.txtGPUFanSpeed.Name = "txtGPUFanSpeed";
             this.txtGPUFanSpeed.ReadOnly = true;
-            this.txtGPUFanSpeed.Size = new System.Drawing.Size(100, 23);
+            this.txtGPUFanSpeed.Size = new System.Drawing.Size(65, 23);
             this.txtGPUFanSpeed.TabIndex = 0;
             this.txtGPUFanSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -350,10 +348,10 @@
             this.grpTemp.Controls.Add(this.picGPUTemp);
             this.grpTemp.Controls.Add(this.txtGpuTemp);
             this.grpTemp.Enabled = false;
-            this.grpTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpTemp.Location = new System.Drawing.Point(10, 40);
             this.grpTemp.Name = "grpTemp";
-            this.grpTemp.Size = new System.Drawing.Size(173, 201);
+            this.grpTemp.Size = new System.Drawing.Size(133, 143);
             this.grpTemp.TabIndex = 12;
             this.grpTemp.TabStop = false;
             this.grpTemp.Text = "Temperature °C:";
@@ -364,19 +362,216 @@
             this.txtGpuTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGpuTemp.Enabled = false;
             this.txtGpuTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGpuTemp.Location = new System.Drawing.Point(36, 159);
+            this.txtGpuTemp.Location = new System.Drawing.Point(36, 108);
             this.txtGpuTemp.Name = "txtGpuTemp";
             this.txtGpuTemp.ReadOnly = true;
-            this.txtGpuTemp.Size = new System.Drawing.Size(100, 23);
+            this.txtGpuTemp.Size = new System.Drawing.Size(65, 23);
             this.txtGpuTemp.TabIndex = 0;
             this.txtGpuTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cmbGPUName
+            // 
+            this.cmbGPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGPUName.FormattingEnabled = true;
+            this.cmbGPUName.Location = new System.Drawing.Point(13, 5);
+            this.cmbGPUName.Name = "cmbGPUName";
+            this.cmbGPUName.Size = new System.Drawing.Size(550, 30);
+            this.cmbGPUName.TabIndex = 3;
+            // 
+            // btnRefreshValues
+            // 
+            this.btnRefreshValues.Location = new System.Drawing.Point(514, 240);
+            this.btnRefreshValues.Name = "btnRefreshValues";
+            this.btnRefreshValues.Size = new System.Drawing.Size(75, 23);
+            this.btnRefreshValues.TabIndex = 2;
+            this.btnRefreshValues.Text = "button1";
+            this.btnRefreshValues.UseVisualStyleBackColor = true;
+            this.btnRefreshValues.Visible = false;
+            this.btnRefreshValues.Click += new System.EventHandler(this.btnRefreshGPU_Click);
+            // 
+            // pnlCpu
+            // 
+            this.pnlCpu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlCpu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlCpu.Controls.Add(this.grpCPULoad);
+            this.pnlCpu.Controls.Add(this.grpCPUCore);
+            this.pnlCpu.Controls.Add(this.gprCPUBus);
+            this.pnlCpu.Controls.Add(this.grpCPUTemp);
+            this.pnlCpu.Controls.Add(this.cmbCPUName);
+            this.pnlCpu.Location = new System.Drawing.Point(13, 36);
+            this.pnlCpu.Name = "pnlCpu";
+            this.pnlCpu.Size = new System.Drawing.Size(581, 198);
+            this.pnlCpu.TabIndex = 2;
+            // 
+            // cmbCPUName
+            // 
+            this.cmbCPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCPUName.FormattingEnabled = true;
+            this.cmbCPUName.Location = new System.Drawing.Point(13, 7);
+            this.cmbCPUName.Name = "cmbCPUName";
+            this.cmbCPUName.Size = new System.Drawing.Size(550, 30);
+            this.cmbCPUName.TabIndex = 20;
+            // 
+            // grpCPUTemp
+            // 
+            this.grpCPUTemp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPUTemp.Controls.Add(this.picCPUTemp);
+            this.grpCPUTemp.Controls.Add(this.txtCPUTemp);
+            this.grpCPUTemp.Enabled = false;
+            this.grpCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPUTemp.Location = new System.Drawing.Point(13, 42);
+            this.grpCPUTemp.Name = "grpCPUTemp";
+            this.grpCPUTemp.Size = new System.Drawing.Size(133, 144);
+            this.grpCPUTemp.TabIndex = 21;
+            this.grpCPUTemp.TabStop = false;
+            this.grpCPUTemp.Text = "Temperature °C:";
+            // 
+            // txtCPUTemp
+            // 
+            this.txtCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPUTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUTemp.Enabled = false;
+            this.txtCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUTemp.Location = new System.Drawing.Point(34, 112);
+            this.txtCPUTemp.Name = "txtCPUTemp";
+            this.txtCPUTemp.ReadOnly = true;
+            this.txtCPUTemp.Size = new System.Drawing.Size(65, 23);
+            this.txtCPUTemp.TabIndex = 0;
+            this.txtCPUTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gprCPUBus
+            // 
+            this.gprCPUBus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gprCPUBus.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gprCPUBus.Controls.Add(this.picBusSpeed);
+            this.gprCPUBus.Controls.Add(this.txtCPUBus);
+            this.gprCPUBus.Enabled = false;
+            this.gprCPUBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gprCPUBus.Location = new System.Drawing.Point(152, 43);
+            this.gprCPUBus.Name = "gprCPUBus";
+            this.gprCPUBus.Size = new System.Drawing.Size(133, 144);
+            this.gprCPUBus.TabIndex = 22;
+            this.gprCPUBus.TabStop = false;
+            this.gprCPUBus.Text = "Bus MHz:";
+            // 
+            // txtCPUBus
+            // 
+            this.txtCPUBus.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPUBus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUBus.Enabled = false;
+            this.txtCPUBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUBus.Location = new System.Drawing.Point(34, 112);
+            this.txtCPUBus.Name = "txtCPUBus";
+            this.txtCPUBus.ReadOnly = true;
+            this.txtCPUBus.Size = new System.Drawing.Size(65, 23);
+            this.txtCPUBus.TabIndex = 0;
+            this.txtCPUBus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpCPUCore
+            // 
+            this.grpCPUCore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPUCore.Controls.Add(this.picCPUCore);
+            this.grpCPUCore.Controls.Add(this.txtCPUCore);
+            this.grpCPUCore.Enabled = false;
+            this.grpCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPUCore.Location = new System.Drawing.Point(291, 43);
+            this.grpCPUCore.Name = "grpCPUCore";
+            this.grpCPUCore.Size = new System.Drawing.Size(133, 144);
+            this.grpCPUCore.TabIndex = 23;
+            this.grpCPUCore.TabStop = false;
+            this.grpCPUCore.Text = "Core MHz:";
+            // 
+            // txtCPUCore
+            // 
+            this.txtCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPUCore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUCore.Enabled = false;
+            this.txtCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUCore.Location = new System.Drawing.Point(36, 112);
+            this.txtCPUCore.Name = "txtCPUCore";
+            this.txtCPUCore.ReadOnly = true;
+            this.txtCPUCore.Size = new System.Drawing.Size(65, 23);
+            this.txtCPUCore.TabIndex = 0;
+            this.txtCPUCore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpCPULoad
+            // 
+            this.grpCPULoad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPULoad.Controls.Add(this.picCPULoad);
+            this.grpCPULoad.Controls.Add(this.txtCPULoad);
+            this.grpCPULoad.Enabled = false;
+            this.grpCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPULoad.Location = new System.Drawing.Point(430, 43);
+            this.grpCPULoad.Name = "grpCPULoad";
+            this.grpCPULoad.Size = new System.Drawing.Size(133, 143);
+            this.grpCPULoad.TabIndex = 24;
+            this.grpCPULoad.TabStop = false;
+            this.grpCPULoad.Text = "Core Load %";
+            // 
+            // txtCPULoad
+            // 
+            this.txtCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPULoad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPULoad.Enabled = false;
+            this.txtCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPULoad.Location = new System.Drawing.Point(36, 112);
+            this.txtCPULoad.Name = "txtCPULoad";
+            this.txtCPULoad.ReadOnly = true;
+            this.txtCPULoad.Size = new System.Drawing.Size(65, 23);
+            this.txtCPULoad.TabIndex = 0;
+            this.txtCPULoad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // picCPULoad
+            // 
+            this.picCPULoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
+            this.picCPULoad.Location = new System.Drawing.Point(36, 33);
+            this.picCPULoad.Name = "picCPULoad";
+            this.picCPULoad.Size = new System.Drawing.Size(65, 77);
+            this.picCPULoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCPULoad.TabIndex = 3;
+            this.picCPULoad.TabStop = false;
+            // 
+            // picCPUCore
+            // 
+            this.picCPUCore.Image = global::ComMon.Properties.Resources.guage;
+            this.picCPUCore.Location = new System.Drawing.Point(36, 34);
+            this.picCPUCore.Name = "picCPUCore";
+            this.picCPUCore.Size = new System.Drawing.Size(65, 77);
+            this.picCPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCPUCore.TabIndex = 3;
+            this.picCPUCore.TabStop = false;
+            // 
+            // picBusSpeed
+            // 
+            this.picBusSpeed.Image = global::ComMon.Properties.Resources.CPUBus;
+            this.picBusSpeed.Location = new System.Drawing.Point(34, 34);
+            this.picBusSpeed.Name = "picBusSpeed";
+            this.picBusSpeed.Size = new System.Drawing.Size(65, 77);
+            this.picBusSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBusSpeed.TabIndex = 3;
+            this.picBusSpeed.TabStop = false;
+            // 
+            // picCPUTemp
+            // 
+            this.picCPUTemp.Image = global::ComMon.Properties.Resources.thermometer;
+            this.picCPUTemp.Location = new System.Drawing.Point(34, 34);
+            this.picCPUTemp.Name = "picCPUTemp";
+            this.picCPUTemp.Size = new System.Drawing.Size(65, 77);
+            this.picCPUTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCPUTemp.TabIndex = 3;
+            this.picCPUTemp.TabStop = false;
             // 
             // picGPMShader
             // 
             this.picGPMShader.Image = global::ComMon.Properties.Resources.guage;
             this.picGPMShader.Location = new System.Drawing.Point(36, 25);
             this.picGPMShader.Name = "picGPMShader";
-            this.picGPMShader.Size = new System.Drawing.Size(100, 128);
+            this.picGPMShader.Size = new System.Drawing.Size(65, 77);
             this.picGPMShader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPMShader.TabIndex = 3;
             this.picGPMShader.TabStop = false;
@@ -386,7 +581,7 @@
             this.picGPUMemLoadPerc.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
             this.picGPUMemLoadPerc.Location = new System.Drawing.Point(36, 25);
             this.picGPUMemLoadPerc.Name = "picGPUMemLoadPerc";
-            this.picGPUMemLoadPerc.Size = new System.Drawing.Size(100, 128);
+            this.picGPUMemLoadPerc.Size = new System.Drawing.Size(65, 77);
             this.picGPUMemLoadPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUMemLoadPerc.TabIndex = 3;
             this.picGPUMemLoadPerc.TabStop = false;
@@ -396,7 +591,7 @@
             this.picCoreLoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
             this.picCoreLoad.Location = new System.Drawing.Point(36, 25);
             this.picCoreLoad.Name = "picCoreLoad";
-            this.picCoreLoad.Size = new System.Drawing.Size(100, 128);
+            this.picCoreLoad.Size = new System.Drawing.Size(65, 77);
             this.picCoreLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picCoreLoad.TabIndex = 3;
             this.picCoreLoad.TabStop = false;
@@ -406,7 +601,7 @@
             this.picGPUFanPerc.Image = global::ComMon.Properties.Resources.fan;
             this.picGPUFanPerc.Location = new System.Drawing.Point(36, 25);
             this.picGPUFanPerc.Name = "picGPUFanPerc";
-            this.picGPUFanPerc.Size = new System.Drawing.Size(100, 128);
+            this.picGPUFanPerc.Size = new System.Drawing.Size(65, 77);
             this.picGPUFanPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUFanPerc.TabIndex = 3;
             this.picGPUFanPerc.TabStop = false;
@@ -416,7 +611,7 @@
             this.picGPUMem.Image = global::ComMon.Properties.Resources.guage;
             this.picGPUMem.Location = new System.Drawing.Point(36, 25);
             this.picGPUMem.Name = "picGPUMem";
-            this.picGPUMem.Size = new System.Drawing.Size(100, 128);
+            this.picGPUMem.Size = new System.Drawing.Size(65, 77);
             this.picGPUMem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUMem.TabIndex = 3;
             this.picGPUMem.TabStop = false;
@@ -424,9 +619,9 @@
             // picGPUCore
             // 
             this.picGPUCore.Image = global::ComMon.Properties.Resources.guage;
-            this.picGPUCore.Location = new System.Drawing.Point(36, 25);
+            this.picGPUCore.Location = new System.Drawing.Point(34, 18);
             this.picGPUCore.Name = "picGPUCore";
-            this.picGPUCore.Size = new System.Drawing.Size(100, 128);
+            this.picGPUCore.Size = new System.Drawing.Size(65, 77);
             this.picGPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUCore.TabIndex = 3;
             this.picGPUCore.TabStop = false;
@@ -436,7 +631,7 @@
             this.picGPUFanSpeed.Image = global::ComMon.Properties.Resources.fan;
             this.picGPUFanSpeed.Location = new System.Drawing.Point(36, 25);
             this.picGPUFanSpeed.Name = "picGPUFanSpeed";
-            this.picGPUFanSpeed.Size = new System.Drawing.Size(100, 128);
+            this.picGPUFanSpeed.Size = new System.Drawing.Size(65, 77);
             this.picGPUFanSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUFanSpeed.TabIndex = 3;
             this.picGPUFanSpeed.TabStop = false;
@@ -446,39 +641,20 @@
             this.picGPUTemp.Image = global::ComMon.Properties.Resources.thermometer;
             this.picGPUTemp.Location = new System.Drawing.Point(36, 25);
             this.picGPUTemp.Name = "picGPUTemp";
-            this.picGPUTemp.Size = new System.Drawing.Size(100, 128);
+            this.picGPUTemp.Size = new System.Drawing.Size(65, 77);
             this.picGPUTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picGPUTemp.TabIndex = 3;
             this.picGPUTemp.TabStop = false;
-            // 
-            // pnlCpu
-            // 
-            this.pnlCpu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlCpu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlCpu.Controls.Add(this.cmbCPUName);
-            this.pnlCpu.Location = new System.Drawing.Point(562, 36);
-            this.pnlCpu.Name = "pnlCpu";
-            this.pnlCpu.Size = new System.Drawing.Size(555, 660);
-            this.pnlCpu.TabIndex = 2;
-            // 
-            // cmbCPUName
-            // 
-            this.cmbCPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCPUName.FormattingEnabled = true;
-            this.cmbCPUName.Location = new System.Drawing.Point(11, 5);
-            this.cmbCPUName.Name = "cmbCPUName";
-            this.cmbCPUName.Size = new System.Drawing.Size(528, 30);
-            this.cmbCPUName.TabIndex = 20;
             // 
             // mainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2026, 702);
+            this.ClientSize = new System.Drawing.Size(606, 599);
             this.Controls.Add(this.pnlCpu);
             this.Controls.Add(this.pnlGPU);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.btnRefreshValues);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainScreen";
@@ -504,6 +680,19 @@
             this.grpFanSpeed.PerformLayout();
             this.grpTemp.ResumeLayout(false);
             this.grpTemp.PerformLayout();
+            this.pnlCpu.ResumeLayout(false);
+            this.grpCPUTemp.ResumeLayout(false);
+            this.grpCPUTemp.PerformLayout();
+            this.gprCPUBus.ResumeLayout(false);
+            this.gprCPUBus.PerformLayout();
+            this.grpCPUCore.ResumeLayout(false);
+            this.grpCPUCore.PerformLayout();
+            this.grpCPULoad.ResumeLayout(false);
+            this.grpCPULoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPULoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUCore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBusSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPUTemp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).EndInit();
@@ -512,7 +701,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).EndInit();
-            this.pnlCpu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,5 +740,17 @@
         private System.Windows.Forms.TextBox txtGpuTemp;
         private System.Windows.Forms.Panel pnlCpu;
         private System.Windows.Forms.ComboBox cmbCPUName;
+        private System.Windows.Forms.GroupBox grpCPUTemp;
+        private System.Windows.Forms.PictureBox picCPUTemp;
+        private System.Windows.Forms.TextBox txtCPUTemp;
+        private System.Windows.Forms.GroupBox gprCPUBus;
+        private System.Windows.Forms.PictureBox picBusSpeed;
+        private System.Windows.Forms.TextBox txtCPUBus;
+        private System.Windows.Forms.GroupBox grpCPUCore;
+        private System.Windows.Forms.PictureBox picCPUCore;
+        private System.Windows.Forms.TextBox txtCPUCore;
+        private System.Windows.Forms.GroupBox grpCPULoad;
+        private System.Windows.Forms.PictureBox picCPULoad;
+        private System.Windows.Forms.TextBox txtCPULoad;
     }
 }

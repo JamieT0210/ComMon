@@ -7,6 +7,8 @@ namespace ComMon.Screens
     public partial class mainScreen : Form
     {
         private string Selected = null;
+        private string SelectedCPU = null;
+        private string SelectedHDD = null;
 
         public mainScreen()
         {
@@ -34,6 +36,7 @@ namespace ComMon.Screens
             {
                 GPUEnabled = true,
                 CPUEnabled = true,
+                HDDEnabled = true,
             };
             c.Open();
 
@@ -45,20 +48,53 @@ namespace ComMon.Screens
                     cmbGPUName.Items.Add(String.Format(Hardware.Name) + ": " + Convert.ToString(Hardware.Identifier));
                     cmbGPUName.SelectedIndex = 0;
                 }
-                if (Hardware.HardwareType == HardwareType.CPU) 
+                if (Hardware.HardwareType == HardwareType.CPU)
                 {
                     cmbCPUName.Items.Add(String.Format(Hardware.Name) + ": " + Convert.ToString(Hardware.Identifier));
                     cmbCPUName.SelectedIndex = 0;
                 }
             }
         }
-
         void timer_CPU_Tick(object sender, EventArgs e)
         {
+            Computer c = new Computer()
+            {
+                CPUEnabled = true
+            };
+            c.Open();
+            foreach (var Hardware in c.Hardware)
+            {
+                Hardware.Update();
+                string str2 = this.cmbCPUName.GetItemText(this.cmbCPUName.SelectedItem);
+                SelectedCPU = str2.Substring(str2.LastIndexOf(' ') + 1);
+                if (Convert.ToString(Hardware.Identifier) == SelectedCPU)
+                {
+                    foreach (var sensor in Hardware.Sensors)
+                        if (sensor.SensorType == SensorType.Temperature)
+                        {
+                            txtCPUTemp.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
+                        }
+                    foreach (var sensor in Hardware.Sensors)
+                        if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/clock/0")
+                        {
+                            txtCPUBus.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
+                        }
+                    foreach (var sensor in Hardware.Sensors)
+                        if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/clock/1")
+                        {
+                            txtCPUCore.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
+                        }
+                    foreach (var sensor in Hardware.Sensors)
+                        if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/load/0")
+                        {
+                            txtCPULoad.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
+                        }
+                }
 
+            }
         }
 
-            void timer_GPU_Tick(object sender, EventArgs e)
+        void timer_GPU_Tick(object sender, EventArgs e)
         {
             Computer c = new Computer()
             {
