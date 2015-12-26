@@ -8,11 +8,14 @@ namespace ComMon.Screens
     {
         private string Selected = null;
         private string SelectedCPU = null;
-        private string SelectedHDD = null;
 
         public mainScreen()
         {
             InitializeComponent();
+
+            this.Text += " - " + System.Environment.MachineName;
+            this.Update();
+
             var timerGPU = new Timer();
             timerGPU.Tick += new EventHandler(timer_GPU_Tick);
             timerGPU.Interval = 1000;
@@ -36,12 +39,12 @@ namespace ComMon.Screens
             {
                 GPUEnabled = true,
                 CPUEnabled = true,
-                HDDEnabled = true,
             };
             c.Open();
 
             foreach (var Hardware in c.Hardware)
             {
+                //Add the GPU and CPU details to their dropdowns
                 Hardware.Update();
                 if ((Hardware.HardwareType == HardwareType.GpuNvidia) || (Hardware.HardwareType == HardwareType.GpuAti))
                 {
@@ -69,21 +72,25 @@ namespace ComMon.Screens
                 SelectedCPU = str2.Substring(str2.LastIndexOf(' ') + 1);
                 if (Convert.ToString(Hardware.Identifier) == SelectedCPU)
                 {
+                    //Get the Core Temp
                     foreach (var sensor in Hardware.Sensors)
                         if (sensor.SensorType == SensorType.Temperature)
                         {
                             txtCPUTemp.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
                         }
+                    //Get the Bus speed
                     foreach (var sensor in Hardware.Sensors)
                         if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/clock/0")
                         {
                             txtCPUBus.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
                         }
+                    //Get the core speed in GHz
                     foreach (var sensor in Hardware.Sensors)
                         if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/clock/1")
                         {
-                            txtCPUCore.Text = Convert.ToString(Math.Round((double)sensor.Value, 0));
+                            txtCPUCore.Text = Convert.ToString(Math.Round((double)sensor.Value / 1024, 2));
                         }
+                    //Get the total CPU load
                     foreach (var sensor in Hardware.Sensors)
                         if (Convert.ToString(sensor.Identifier) == SelectedCPU + "/load/0")
                         {

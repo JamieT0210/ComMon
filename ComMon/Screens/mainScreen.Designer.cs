@@ -33,72 +33,72 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlGPU = new System.Windows.Forms.Panel();
             this.grpShader = new System.Windows.Forms.GroupBox();
+            this.picGPMShader = new System.Windows.Forms.PictureBox();
             this.txtGPUShader = new System.Windows.Forms.TextBox();
             this.grpGPUMemLoad = new System.Windows.Forms.GroupBox();
+            this.picGPUMemLoadPerc = new System.Windows.Forms.PictureBox();
             this.txtGPUMemLoadPerc = new System.Windows.Forms.TextBox();
             this.grpGPUCoreLoad = new System.Windows.Forms.GroupBox();
+            this.picCoreLoad = new System.Windows.Forms.PictureBox();
             this.txtGPUCoreLoad = new System.Windows.Forms.TextBox();
             this.grpFanPerc = new System.Windows.Forms.GroupBox();
+            this.picGPUFanPerc = new System.Windows.Forms.PictureBox();
             this.txtGpuFanPercent = new System.Windows.Forms.TextBox();
             this.grpMemClock = new System.Windows.Forms.GroupBox();
+            this.picGPUMem = new System.Windows.Forms.PictureBox();
             this.txtGPUMem = new System.Windows.Forms.TextBox();
             this.grpCoreClock = new System.Windows.Forms.GroupBox();
+            this.picGPUCore = new System.Windows.Forms.PictureBox();
             this.txtGPUCore = new System.Windows.Forms.TextBox();
             this.grpFanSpeed = new System.Windows.Forms.GroupBox();
+            this.picGPUFanSpeed = new System.Windows.Forms.PictureBox();
             this.txtGPUFanSpeed = new System.Windows.Forms.TextBox();
             this.grpTemp = new System.Windows.Forms.GroupBox();
+            this.picGPUTemp = new System.Windows.Forms.PictureBox();
             this.txtGpuTemp = new System.Windows.Forms.TextBox();
             this.cmbGPUName = new System.Windows.Forms.ComboBox();
             this.btnRefreshValues = new System.Windows.Forms.Button();
             this.pnlCpu = new System.Windows.Forms.Panel();
-            this.cmbCPUName = new System.Windows.Forms.ComboBox();
-            this.grpCPUTemp = new System.Windows.Forms.GroupBox();
-            this.txtCPUTemp = new System.Windows.Forms.TextBox();
-            this.gprCPUBus = new System.Windows.Forms.GroupBox();
-            this.txtCPUBus = new System.Windows.Forms.TextBox();
-            this.grpCPUCore = new System.Windows.Forms.GroupBox();
-            this.txtCPUCore = new System.Windows.Forms.TextBox();
             this.grpCPULoad = new System.Windows.Forms.GroupBox();
-            this.txtCPULoad = new System.Windows.Forms.TextBox();
             this.picCPULoad = new System.Windows.Forms.PictureBox();
+            this.txtCPULoad = new System.Windows.Forms.TextBox();
+            this.grpCPUCore = new System.Windows.Forms.GroupBox();
             this.picCPUCore = new System.Windows.Forms.PictureBox();
+            this.txtCPUCore = new System.Windows.Forms.TextBox();
+            this.gprCPUBus = new System.Windows.Forms.GroupBox();
             this.picBusSpeed = new System.Windows.Forms.PictureBox();
+            this.txtCPUBus = new System.Windows.Forms.TextBox();
+            this.grpCPUTemp = new System.Windows.Forms.GroupBox();
             this.picCPUTemp = new System.Windows.Forms.PictureBox();
-            this.picGPMShader = new System.Windows.Forms.PictureBox();
-            this.picGPUMemLoadPerc = new System.Windows.Forms.PictureBox();
-            this.picCoreLoad = new System.Windows.Forms.PictureBox();
-            this.picGPUFanPerc = new System.Windows.Forms.PictureBox();
-            this.picGPUMem = new System.Windows.Forms.PictureBox();
-            this.picGPUCore = new System.Windows.Forms.PictureBox();
-            this.picGPUFanSpeed = new System.Windows.Forms.PictureBox();
-            this.picGPUTemp = new System.Windows.Forms.PictureBox();
+            this.txtCPUTemp = new System.Windows.Forms.TextBox();
+            this.cmbCPUName = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.pnlGPU.SuspendLayout();
             this.grpShader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).BeginInit();
             this.grpGPUMemLoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).BeginInit();
             this.grpGPUCoreLoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).BeginInit();
             this.grpFanPerc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanPerc)).BeginInit();
             this.grpMemClock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUMem)).BeginInit();
             this.grpCoreClock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).BeginInit();
             this.grpFanSpeed.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).BeginInit();
             this.grpTemp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).BeginInit();
             this.pnlCpu.SuspendLayout();
-            this.grpCPUTemp.SuspendLayout();
-            this.gprCPUBus.SuspendLayout();
-            this.grpCPUCore.SuspendLayout();
             this.grpCPULoad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPULoad)).BeginInit();
+            this.grpCPUCore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPUCore)).BeginInit();
+            this.gprCPUBus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBusSpeed)).BeginInit();
+            this.grpCPUTemp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPUTemp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanPerc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUMem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -123,7 +123,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(124, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -160,6 +160,16 @@
             this.grpShader.TabStop = false;
             this.grpShader.Text = "Shader MHz:";
             // 
+            // picGPMShader
+            // 
+            this.picGPMShader.Image = global::ComMon.Properties.Resources.guage;
+            this.picGPMShader.Location = new System.Drawing.Point(36, 25);
+            this.picGPMShader.Name = "picGPMShader";
+            this.picGPMShader.Size = new System.Drawing.Size(65, 77);
+            this.picGPMShader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPMShader.TabIndex = 3;
+            this.picGPMShader.TabStop = false;
+            // 
             // txtGPUShader
             // 
             this.txtGPUShader.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -187,6 +197,16 @@
             this.grpGPUMemLoad.TabIndex = 19;
             this.grpGPUMemLoad.TabStop = false;
             this.grpGPUMemLoad.Text = "Memory %:";
+            // 
+            // picGPUMemLoadPerc
+            // 
+            this.picGPUMemLoadPerc.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
+            this.picGPUMemLoadPerc.Location = new System.Drawing.Point(36, 25);
+            this.picGPUMemLoadPerc.Name = "picGPUMemLoadPerc";
+            this.picGPUMemLoadPerc.Size = new System.Drawing.Size(65, 77);
+            this.picGPUMemLoadPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUMemLoadPerc.TabIndex = 3;
+            this.picGPUMemLoadPerc.TabStop = false;
             // 
             // txtGPUMemLoadPerc
             // 
@@ -216,6 +236,16 @@
             this.grpGPUCoreLoad.TabStop = false;
             this.grpGPUCoreLoad.Text = "Core Load %";
             // 
+            // picCoreLoad
+            // 
+            this.picCoreLoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
+            this.picCoreLoad.Location = new System.Drawing.Point(36, 25);
+            this.picCoreLoad.Name = "picCoreLoad";
+            this.picCoreLoad.Size = new System.Drawing.Size(65, 77);
+            this.picCoreLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCoreLoad.TabIndex = 3;
+            this.picCoreLoad.TabStop = false;
+            // 
             // txtGPUCoreLoad
             // 
             this.txtGPUCoreLoad.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -243,6 +273,16 @@
             this.grpFanPerc.TabIndex = 14;
             this.grpFanPerc.TabStop = false;
             this.grpFanPerc.Text = "Fan Speed %:";
+            // 
+            // picGPUFanPerc
+            // 
+            this.picGPUFanPerc.Image = global::ComMon.Properties.Resources.fan;
+            this.picGPUFanPerc.Location = new System.Drawing.Point(36, 25);
+            this.picGPUFanPerc.Name = "picGPUFanPerc";
+            this.picGPUFanPerc.Size = new System.Drawing.Size(65, 77);
+            this.picGPUFanPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUFanPerc.TabIndex = 3;
+            this.picGPUFanPerc.TabStop = false;
             // 
             // txtGpuFanPercent
             // 
@@ -272,6 +312,16 @@
             this.grpMemClock.TabStop = false;
             this.grpMemClock.Text = "Memory MHz:";
             // 
+            // picGPUMem
+            // 
+            this.picGPUMem.Image = global::ComMon.Properties.Resources.guage;
+            this.picGPUMem.Location = new System.Drawing.Point(36, 25);
+            this.picGPUMem.Name = "picGPUMem";
+            this.picGPUMem.Size = new System.Drawing.Size(65, 77);
+            this.picGPUMem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUMem.TabIndex = 3;
+            this.picGPUMem.TabStop = false;
+            // 
             // txtGPUMem
             // 
             this.txtGPUMem.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -299,6 +349,16 @@
             this.grpCoreClock.TabIndex = 15;
             this.grpCoreClock.TabStop = false;
             this.grpCoreClock.Text = "Core MHz:";
+            // 
+            // picGPUCore
+            // 
+            this.picGPUCore.Image = global::ComMon.Properties.Resources.guage;
+            this.picGPUCore.Location = new System.Drawing.Point(34, 18);
+            this.picGPUCore.Name = "picGPUCore";
+            this.picGPUCore.Size = new System.Drawing.Size(65, 77);
+            this.picGPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUCore.TabIndex = 3;
+            this.picGPUCore.TabStop = false;
             // 
             // txtGPUCore
             // 
@@ -328,6 +388,16 @@
             this.grpFanSpeed.TabStop = false;
             this.grpFanSpeed.Text = "Fan RPM:";
             // 
+            // picGPUFanSpeed
+            // 
+            this.picGPUFanSpeed.Image = global::ComMon.Properties.Resources.fan;
+            this.picGPUFanSpeed.Location = new System.Drawing.Point(36, 25);
+            this.picGPUFanSpeed.Name = "picGPUFanSpeed";
+            this.picGPUFanSpeed.Size = new System.Drawing.Size(65, 77);
+            this.picGPUFanSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUFanSpeed.TabIndex = 3;
+            this.picGPUFanSpeed.TabStop = false;
+            // 
             // txtGPUFanSpeed
             // 
             this.txtGPUFanSpeed.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -354,7 +424,17 @@
             this.grpTemp.Size = new System.Drawing.Size(133, 143);
             this.grpTemp.TabIndex = 12;
             this.grpTemp.TabStop = false;
-            this.grpTemp.Text = "Temperature °C:";
+            this.grpTemp.Text = "Temp °C:";
+            // 
+            // picGPUTemp
+            // 
+            this.picGPUTemp.Image = global::ComMon.Properties.Resources.thermometer;
+            this.picGPUTemp.Location = new System.Drawing.Point(36, 25);
+            this.picGPUTemp.Name = "picGPUTemp";
+            this.picGPUTemp.Size = new System.Drawing.Size(65, 77);
+            this.picGPUTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGPUTemp.TabIndex = 3;
+            this.picGPUTemp.TabStop = false;
             // 
             // txtGpuTemp
             // 
@@ -404,43 +484,81 @@
             this.pnlCpu.Size = new System.Drawing.Size(581, 198);
             this.pnlCpu.TabIndex = 2;
             // 
-            // cmbCPUName
+            // grpCPULoad
             // 
-            this.cmbCPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCPUName.FormattingEnabled = true;
-            this.cmbCPUName.Location = new System.Drawing.Point(13, 7);
-            this.cmbCPUName.Name = "cmbCPUName";
-            this.cmbCPUName.Size = new System.Drawing.Size(550, 30);
-            this.cmbCPUName.TabIndex = 20;
+            this.grpCPULoad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPULoad.Controls.Add(this.picCPULoad);
+            this.grpCPULoad.Controls.Add(this.txtCPULoad);
+            this.grpCPULoad.Enabled = false;
+            this.grpCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPULoad.Location = new System.Drawing.Point(430, 43);
+            this.grpCPULoad.Name = "grpCPULoad";
+            this.grpCPULoad.Size = new System.Drawing.Size(133, 143);
+            this.grpCPULoad.TabIndex = 24;
+            this.grpCPULoad.TabStop = false;
+            this.grpCPULoad.Text = "Core Load %";
             // 
-            // grpCPUTemp
+            // picCPULoad
             // 
-            this.grpCPUTemp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.grpCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grpCPUTemp.Controls.Add(this.picCPUTemp);
-            this.grpCPUTemp.Controls.Add(this.txtCPUTemp);
-            this.grpCPUTemp.Enabled = false;
-            this.grpCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPUTemp.Location = new System.Drawing.Point(13, 42);
-            this.grpCPUTemp.Name = "grpCPUTemp";
-            this.grpCPUTemp.Size = new System.Drawing.Size(133, 144);
-            this.grpCPUTemp.TabIndex = 21;
-            this.grpCPUTemp.TabStop = false;
-            this.grpCPUTemp.Text = "Temperature °C:";
+            this.picCPULoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
+            this.picCPULoad.Location = new System.Drawing.Point(36, 33);
+            this.picCPULoad.Name = "picCPULoad";
+            this.picCPULoad.Size = new System.Drawing.Size(65, 77);
+            this.picCPULoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCPULoad.TabIndex = 3;
+            this.picCPULoad.TabStop = false;
             // 
-            // txtCPUTemp
+            // txtCPULoad
             // 
-            this.txtCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCPUTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUTemp.Enabled = false;
-            this.txtCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUTemp.Location = new System.Drawing.Point(34, 112);
-            this.txtCPUTemp.Name = "txtCPUTemp";
-            this.txtCPUTemp.ReadOnly = true;
-            this.txtCPUTemp.Size = new System.Drawing.Size(65, 23);
-            this.txtCPUTemp.TabIndex = 0;
-            this.txtCPUTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPULoad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPULoad.Enabled = false;
+            this.txtCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPULoad.Location = new System.Drawing.Point(36, 112);
+            this.txtCPULoad.Name = "txtCPULoad";
+            this.txtCPULoad.ReadOnly = true;
+            this.txtCPULoad.Size = new System.Drawing.Size(65, 23);
+            this.txtCPULoad.TabIndex = 0;
+            this.txtCPULoad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpCPUCore
+            // 
+            this.grpCPUCore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPUCore.Controls.Add(this.picCPUCore);
+            this.grpCPUCore.Controls.Add(this.txtCPUCore);
+            this.grpCPUCore.Enabled = false;
+            this.grpCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPUCore.Location = new System.Drawing.Point(291, 43);
+            this.grpCPUCore.Name = "grpCPUCore";
+            this.grpCPUCore.Size = new System.Drawing.Size(133, 144);
+            this.grpCPUCore.TabIndex = 23;
+            this.grpCPUCore.TabStop = false;
+            this.grpCPUCore.Text = "Core GHz:";
+            // 
+            // picCPUCore
+            // 
+            this.picCPUCore.Image = global::ComMon.Properties.Resources.guage;
+            this.picCPUCore.Location = new System.Drawing.Point(36, 34);
+            this.picCPUCore.Name = "picCPUCore";
+            this.picCPUCore.Size = new System.Drawing.Size(65, 77);
+            this.picCPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCPUCore.TabIndex = 3;
+            this.picCPUCore.TabStop = false;
+            // 
+            // txtCPUCore
+            // 
+            this.txtCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPUCore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUCore.Enabled = false;
+            this.txtCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUCore.Location = new System.Drawing.Point(36, 112);
+            this.txtCPUCore.Name = "txtCPUCore";
+            this.txtCPUCore.ReadOnly = true;
+            this.txtCPUCore.Size = new System.Drawing.Size(65, 23);
+            this.txtCPUCore.TabIndex = 0;
+            this.txtCPUCore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gprCPUBus
             // 
@@ -457,6 +575,16 @@
             this.gprCPUBus.TabStop = false;
             this.gprCPUBus.Text = "Bus MHz:";
             // 
+            // picBusSpeed
+            // 
+            this.picBusSpeed.Image = global::ComMon.Properties.Resources.CPUBus;
+            this.picBusSpeed.Location = new System.Drawing.Point(34, 34);
+            this.picBusSpeed.Name = "picBusSpeed";
+            this.picBusSpeed.Size = new System.Drawing.Size(65, 77);
+            this.picBusSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBusSpeed.TabIndex = 3;
+            this.picBusSpeed.TabStop = false;
+            // 
             // txtCPUBus
             // 
             this.txtCPUBus.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -470,91 +598,20 @@
             this.txtCPUBus.TabIndex = 0;
             this.txtCPUBus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // grpCPUCore
+            // grpCPUTemp
             // 
-            this.grpCPUCore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.grpCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grpCPUCore.Controls.Add(this.picCPUCore);
-            this.grpCPUCore.Controls.Add(this.txtCPUCore);
-            this.grpCPUCore.Enabled = false;
-            this.grpCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPUCore.Location = new System.Drawing.Point(291, 43);
-            this.grpCPUCore.Name = "grpCPUCore";
-            this.grpCPUCore.Size = new System.Drawing.Size(133, 144);
-            this.grpCPUCore.TabIndex = 23;
-            this.grpCPUCore.TabStop = false;
-            this.grpCPUCore.Text = "Core MHz:";
-            // 
-            // txtCPUCore
-            // 
-            this.txtCPUCore.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCPUCore.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUCore.Enabled = false;
-            this.txtCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUCore.Location = new System.Drawing.Point(36, 112);
-            this.txtCPUCore.Name = "txtCPUCore";
-            this.txtCPUCore.ReadOnly = true;
-            this.txtCPUCore.Size = new System.Drawing.Size(65, 23);
-            this.txtCPUCore.TabIndex = 0;
-            this.txtCPUCore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // grpCPULoad
-            // 
-            this.grpCPULoad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.grpCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grpCPULoad.Controls.Add(this.picCPULoad);
-            this.grpCPULoad.Controls.Add(this.txtCPULoad);
-            this.grpCPULoad.Enabled = false;
-            this.grpCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPULoad.Location = new System.Drawing.Point(430, 43);
-            this.grpCPULoad.Name = "grpCPULoad";
-            this.grpCPULoad.Size = new System.Drawing.Size(133, 143);
-            this.grpCPULoad.TabIndex = 24;
-            this.grpCPULoad.TabStop = false;
-            this.grpCPULoad.Text = "Core Load %";
-            // 
-            // txtCPULoad
-            // 
-            this.txtCPULoad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCPULoad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPULoad.Enabled = false;
-            this.txtCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPULoad.Location = new System.Drawing.Point(36, 112);
-            this.txtCPULoad.Name = "txtCPULoad";
-            this.txtCPULoad.ReadOnly = true;
-            this.txtCPULoad.Size = new System.Drawing.Size(65, 23);
-            this.txtCPULoad.TabIndex = 0;
-            this.txtCPULoad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // picCPULoad
-            // 
-            this.picCPULoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
-            this.picCPULoad.Location = new System.Drawing.Point(36, 33);
-            this.picCPULoad.Name = "picCPULoad";
-            this.picCPULoad.Size = new System.Drawing.Size(65, 77);
-            this.picCPULoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCPULoad.TabIndex = 3;
-            this.picCPULoad.TabStop = false;
-            // 
-            // picCPUCore
-            // 
-            this.picCPUCore.Image = global::ComMon.Properties.Resources.guage;
-            this.picCPUCore.Location = new System.Drawing.Point(36, 34);
-            this.picCPUCore.Name = "picCPUCore";
-            this.picCPUCore.Size = new System.Drawing.Size(65, 77);
-            this.picCPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCPUCore.TabIndex = 3;
-            this.picCPUCore.TabStop = false;
-            // 
-            // picBusSpeed
-            // 
-            this.picBusSpeed.Image = global::ComMon.Properties.Resources.CPUBus;
-            this.picBusSpeed.Location = new System.Drawing.Point(34, 34);
-            this.picBusSpeed.Name = "picBusSpeed";
-            this.picBusSpeed.Size = new System.Drawing.Size(65, 77);
-            this.picBusSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picBusSpeed.TabIndex = 3;
-            this.picBusSpeed.TabStop = false;
+            this.grpCPUTemp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.grpCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCPUTemp.Controls.Add(this.picCPUTemp);
+            this.grpCPUTemp.Controls.Add(this.txtCPUTemp);
+            this.grpCPUTemp.Enabled = false;
+            this.grpCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCPUTemp.Location = new System.Drawing.Point(13, 42);
+            this.grpCPUTemp.Name = "grpCPUTemp";
+            this.grpCPUTemp.Size = new System.Drawing.Size(133, 144);
+            this.grpCPUTemp.TabIndex = 21;
+            this.grpCPUTemp.TabStop = false;
+            this.grpCPUTemp.Text = "Temp °C:";
             // 
             // picCPUTemp
             // 
@@ -566,85 +623,28 @@
             this.picCPUTemp.TabIndex = 3;
             this.picCPUTemp.TabStop = false;
             // 
-            // picGPMShader
+            // txtCPUTemp
             // 
-            this.picGPMShader.Image = global::ComMon.Properties.Resources.guage;
-            this.picGPMShader.Location = new System.Drawing.Point(36, 25);
-            this.picGPMShader.Name = "picGPMShader";
-            this.picGPMShader.Size = new System.Drawing.Size(65, 77);
-            this.picGPMShader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPMShader.TabIndex = 3;
-            this.picGPMShader.TabStop = false;
+            this.txtCPUTemp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCPUTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUTemp.Enabled = false;
+            this.txtCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUTemp.Location = new System.Drawing.Point(34, 112);
+            this.txtCPUTemp.Name = "txtCPUTemp";
+            this.txtCPUTemp.ReadOnly = true;
+            this.txtCPUTemp.Size = new System.Drawing.Size(65, 23);
+            this.txtCPUTemp.TabIndex = 0;
+            this.txtCPUTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // picGPUMemLoadPerc
+            // cmbCPUName
             // 
-            this.picGPUMemLoadPerc.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
-            this.picGPUMemLoadPerc.Location = new System.Drawing.Point(36, 25);
-            this.picGPUMemLoadPerc.Name = "picGPUMemLoadPerc";
-            this.picGPUMemLoadPerc.Size = new System.Drawing.Size(65, 77);
-            this.picGPUMemLoadPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUMemLoadPerc.TabIndex = 3;
-            this.picGPUMemLoadPerc.TabStop = false;
-            // 
-            // picCoreLoad
-            // 
-            this.picCoreLoad.Image = global::ComMon.Properties.Resources.performance_clock_speed_512;
-            this.picCoreLoad.Location = new System.Drawing.Point(36, 25);
-            this.picCoreLoad.Name = "picCoreLoad";
-            this.picCoreLoad.Size = new System.Drawing.Size(65, 77);
-            this.picCoreLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCoreLoad.TabIndex = 3;
-            this.picCoreLoad.TabStop = false;
-            // 
-            // picGPUFanPerc
-            // 
-            this.picGPUFanPerc.Image = global::ComMon.Properties.Resources.fan;
-            this.picGPUFanPerc.Location = new System.Drawing.Point(36, 25);
-            this.picGPUFanPerc.Name = "picGPUFanPerc";
-            this.picGPUFanPerc.Size = new System.Drawing.Size(65, 77);
-            this.picGPUFanPerc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUFanPerc.TabIndex = 3;
-            this.picGPUFanPerc.TabStop = false;
-            // 
-            // picGPUMem
-            // 
-            this.picGPUMem.Image = global::ComMon.Properties.Resources.guage;
-            this.picGPUMem.Location = new System.Drawing.Point(36, 25);
-            this.picGPUMem.Name = "picGPUMem";
-            this.picGPUMem.Size = new System.Drawing.Size(65, 77);
-            this.picGPUMem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUMem.TabIndex = 3;
-            this.picGPUMem.TabStop = false;
-            // 
-            // picGPUCore
-            // 
-            this.picGPUCore.Image = global::ComMon.Properties.Resources.guage;
-            this.picGPUCore.Location = new System.Drawing.Point(34, 18);
-            this.picGPUCore.Name = "picGPUCore";
-            this.picGPUCore.Size = new System.Drawing.Size(65, 77);
-            this.picGPUCore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUCore.TabIndex = 3;
-            this.picGPUCore.TabStop = false;
-            // 
-            // picGPUFanSpeed
-            // 
-            this.picGPUFanSpeed.Image = global::ComMon.Properties.Resources.fan;
-            this.picGPUFanSpeed.Location = new System.Drawing.Point(36, 25);
-            this.picGPUFanSpeed.Name = "picGPUFanSpeed";
-            this.picGPUFanSpeed.Size = new System.Drawing.Size(65, 77);
-            this.picGPUFanSpeed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUFanSpeed.TabIndex = 3;
-            this.picGPUFanSpeed.TabStop = false;
-            // 
-            // picGPUTemp
-            // 
-            this.picGPUTemp.Image = global::ComMon.Properties.Resources.thermometer;
-            this.picGPUTemp.Location = new System.Drawing.Point(36, 25);
-            this.picGPUTemp.Name = "picGPUTemp";
-            this.picGPUTemp.Size = new System.Drawing.Size(65, 77);
-            this.picGPUTemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGPUTemp.TabIndex = 3;
-            this.picGPUTemp.TabStop = false;
+            this.cmbCPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCPUName.FormattingEnabled = true;
+            this.cmbCPUName.Location = new System.Drawing.Point(13, 7);
+            this.cmbCPUName.Name = "cmbCPUName";
+            this.cmbCPUName.Size = new System.Drawing.Size(550, 30);
+            this.cmbCPUName.TabIndex = 20;
             // 
             // mainScreen
             // 
@@ -659,48 +659,48 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ComMon";
+            this.Text = "Computer Monitor";
             this.Load += new System.EventHandler(this.btnRefreshGPU_Click);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnlGPU.ResumeLayout(false);
             this.grpShader.ResumeLayout(false);
             this.grpShader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).EndInit();
             this.grpGPUMemLoad.ResumeLayout(false);
             this.grpGPUMemLoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).EndInit();
             this.grpGPUCoreLoad.ResumeLayout(false);
             this.grpGPUCoreLoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).EndInit();
             this.grpFanPerc.ResumeLayout(false);
             this.grpFanPerc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanPerc)).EndInit();
             this.grpMemClock.ResumeLayout(false);
             this.grpMemClock.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUMem)).EndInit();
             this.grpCoreClock.ResumeLayout(false);
             this.grpCoreClock.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).EndInit();
             this.grpFanSpeed.ResumeLayout(false);
             this.grpFanSpeed.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).EndInit();
             this.grpTemp.ResumeLayout(false);
             this.grpTemp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).EndInit();
             this.pnlCpu.ResumeLayout(false);
-            this.grpCPUTemp.ResumeLayout(false);
-            this.grpCPUTemp.PerformLayout();
-            this.gprCPUBus.ResumeLayout(false);
-            this.gprCPUBus.PerformLayout();
-            this.grpCPUCore.ResumeLayout(false);
-            this.grpCPUCore.PerformLayout();
             this.grpCPULoad.ResumeLayout(false);
             this.grpCPULoad.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPULoad)).EndInit();
+            this.grpCPUCore.ResumeLayout(false);
+            this.grpCPUCore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPUCore)).EndInit();
+            this.gprCPUBus.ResumeLayout(false);
+            this.gprCPUBus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBusSpeed)).EndInit();
+            this.grpCPUTemp.ResumeLayout(false);
+            this.grpCPUTemp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCPUTemp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPMShader)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUMemLoadPerc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCoreLoad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanPerc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUMem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUCore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUFanSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGPUTemp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
