@@ -176,5 +176,11 @@ namespace ComMon.Screens
                 }
             }
         }
+
+        private void aboutComputerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About frm = new About();
+            frm.Show();
+        }
     }
 }

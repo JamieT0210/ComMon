@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainScreen));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +73,7 @@
             this.picCPUTemp = new System.Windows.Forms.PictureBox();
             this.txtCPUTemp = new System.Windows.Forms.TextBox();
             this.cmbCPUName = new System.Windows.Forms.ComboBox();
+            this.aboutComputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlGPU.SuspendLayout();
             this.grpShader.SuspendLayout();
@@ -103,6 +105,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
@@ -115,6 +118,7 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutComputerToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
@@ -123,14 +127,13 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(232, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // pnlGPU
             // 
             this.pnlGPU.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlGPU.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlGPU.Controls.Add(this.grpShader);
             this.pnlGPU.Controls.Add(this.grpGPUMemLoad);
             this.pnlGPU.Controls.Add(this.grpGPUCoreLoad);
@@ -140,9 +143,9 @@
             this.pnlGPU.Controls.Add(this.grpFanSpeed);
             this.pnlGPU.Controls.Add(this.grpTemp);
             this.pnlGPU.Controls.Add(this.cmbGPUName);
-            this.pnlGPU.Location = new System.Drawing.Point(13, 240);
+            this.pnlGPU.Location = new System.Drawing.Point(13, 231);
             this.pnlGPU.Name = "pnlGPU";
-            this.pnlGPU.Size = new System.Drawing.Size(581, 348);
+            this.pnlGPU.Size = new System.Drawing.Size(581, 357);
             this.pnlGPU.TabIndex = 1;
             // 
             // grpShader
@@ -451,6 +454,7 @@
             // 
             // cmbGPUName
             // 
+            this.cmbGPUName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbGPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGPUName.FormattingEnabled = true;
@@ -473,7 +477,6 @@
             // pnlCpu
             // 
             this.pnlCpu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlCpu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlCpu.Controls.Add(this.grpCPULoad);
             this.pnlCpu.Controls.Add(this.grpCPUCore);
             this.pnlCpu.Controls.Add(this.gprCPUBus);
@@ -492,7 +495,7 @@
             this.grpCPULoad.Controls.Add(this.txtCPULoad);
             this.grpCPULoad.Enabled = false;
             this.grpCPULoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPULoad.Location = new System.Drawing.Point(430, 43);
+            this.grpCPULoad.Location = new System.Drawing.Point(430, 45);
             this.grpCPULoad.Name = "grpCPULoad";
             this.grpCPULoad.Size = new System.Drawing.Size(133, 143);
             this.grpCPULoad.TabIndex = 24;
@@ -530,7 +533,7 @@
             this.grpCPUCore.Controls.Add(this.txtCPUCore);
             this.grpCPUCore.Enabled = false;
             this.grpCPUCore.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPUCore.Location = new System.Drawing.Point(291, 43);
+            this.grpCPUCore.Location = new System.Drawing.Point(291, 44);
             this.grpCPUCore.Name = "grpCPUCore";
             this.grpCPUCore.Size = new System.Drawing.Size(133, 144);
             this.grpCPUCore.TabIndex = 23;
@@ -568,7 +571,7 @@
             this.gprCPUBus.Controls.Add(this.txtCPUBus);
             this.gprCPUBus.Enabled = false;
             this.gprCPUBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gprCPUBus.Location = new System.Drawing.Point(152, 43);
+            this.gprCPUBus.Location = new System.Drawing.Point(152, 44);
             this.gprCPUBus.Name = "gprCPUBus";
             this.gprCPUBus.Size = new System.Drawing.Size(133, 144);
             this.gprCPUBus.TabIndex = 22;
@@ -606,7 +609,8 @@
             this.grpCPUTemp.Controls.Add(this.txtCPUTemp);
             this.grpCPUTemp.Enabled = false;
             this.grpCPUTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCPUTemp.Location = new System.Drawing.Point(13, 42);
+            this.grpCPUTemp.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grpCPUTemp.Location = new System.Drawing.Point(13, 44);
             this.grpCPUTemp.Name = "grpCPUTemp";
             this.grpCPUTemp.Size = new System.Drawing.Size(133, 144);
             this.grpCPUTemp.TabIndex = 21;
@@ -638,6 +642,7 @@
             // 
             // cmbCPUName
             // 
+            this.cmbCPUName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbCPUName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCPUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCPUName.FormattingEnabled = true;
@@ -646,16 +651,25 @@
             this.cmbCPUName.Size = new System.Drawing.Size(550, 30);
             this.cmbCPUName.TabIndex = 20;
             // 
+            // aboutComputerToolStripMenuItem
+            // 
+            this.aboutComputerToolStripMenuItem.Name = "aboutComputerToolStripMenuItem";
+            this.aboutComputerToolStripMenuItem.Size = new System.Drawing.Size(232, 30);
+            this.aboutComputerToolStripMenuItem.Text = "About Computer";
+            this.aboutComputerToolStripMenuItem.Click += new System.EventHandler(this.aboutComputerToolStripMenuItem_Click);
+            // 
             // mainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 599);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(606, 603);
             this.Controls.Add(this.pnlCpu);
             this.Controls.Add(this.pnlGPU);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnRefreshValues);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -752,5 +766,6 @@
         private System.Windows.Forms.GroupBox grpCPULoad;
         private System.Windows.Forms.PictureBox picCPULoad;
         private System.Windows.Forms.TextBox txtCPULoad;
+        private System.Windows.Forms.ToolStripMenuItem aboutComputerToolStripMenuItem;
     }
 }
